@@ -10,7 +10,7 @@ pd.set_option("display.width", 500)
 #Görev 1: Verileri Yükleme ve İnceleme
 #Yapacağımız ilk şey ham işitsel verileri yüklemek.
 
-df = pd.read_csv("D:\DataAnalysis\CleaningDatainPython\\audible_uncleaned.csv")
+df = pd.read_csv("audible_uncleaned.csv")
 
 def check_df(dataframe, head = 5):
     print("-----------------------Shape-----------------------")
@@ -165,4 +165,4 @@ df.isna().sum()
 #Görev 9: Temizlenen veri setini kaydedin
 #Temiz dosyayı kaydetmek için .to_csv yöntemini kullanabiliriz. Geçerli dizini hedef dosyamıza da kopyalamamak için index=False öğesini ekleriz.
 
-df.to_csv("D:\DataAnalysis\CleaningDatainPython\\audible_cleaned.csv", index = False)
+df.to_csv("audible_cleaned.csv", index = False)
